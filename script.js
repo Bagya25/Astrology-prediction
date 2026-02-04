@@ -32,8 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
     showMessage("🔮 Sending your details...", "#4f46e5");
 
     try {
-      const response = await fetch(
-        "https://coderbagya.app.n8n.cloud/webhook/Astro",
+      const response = await fetch("https://coderbagya.app.n8n.cloud/webhook/Astro",
         {
           method: "POST",
           headers: {
