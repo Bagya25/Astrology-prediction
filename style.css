@@ -1,0 +1,102 @@
+/* ---------- Base Reset ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------- Page Layout ---------- */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #eef2f7, #f9fbfd);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #1f2937;
+}
+
+/* ---------- Heading ---------- */
+h2 {
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  color: #111827;
+}
+
+/* ---------- Form Card ---------- */
+form#astroForm {
+  background-color: #ffffff;
+  width: 380px;
+  padding: 32px 36px;
+  border-radius: 14px;
+  box-shadow: 
+    0 10px 25px rgba(0, 0, 0, 0.08),
+    0 4px 10px rgba(0, 0, 0, 0.04);
+}
+
+/* ---------- Inputs & Select ---------- */
+input,
+select {
+  width: 100%;
+  padding: 13px 15px;
+  margin-bottom: 14px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  font-size: 15px;
+  background-color: #ffffff;
+  transition: all 0.25s ease;
+}
+
+input::placeholder {
+  color: #9ca3af;
+}
+
+input:focus,
+select:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+  outline: none;
+}
+
+/* ---------- Button ---------- */
+button {
+  margin-top: 8px;
+  width: 100%;
+  padding: 13px;
+  font-size: 16px;
+  font-weight: 600;
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(79, 70, 229, 0.35);
+}
+
+/* ---------- Message ---------- */
+#message {
+  margin-top: 16px;
+  font-size: 14.5px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 420px) {
+  form#astroForm {
+    width: 90%;
+    padding: 26px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+}

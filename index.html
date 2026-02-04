@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Astrology Prediction</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Optional: Google Font (Professional look) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <h2>Astrology Prediction</h2>
+
+  <form id="astroForm" novalidate>
+
+    <input
+      type="text"
+      id="name"
+      name="name"
+      placeholder="Full Name"
+      required
+    />
+
+    <input
+      type="date"
+      id="dob"
+      name="dob"
+      required
+    />
+
+    <input
+      type="time"
+      id="tob"
+      name="tob"
+    />
+
+    <input
+      type="text"
+      id="pob"
+      name="pob"
+      placeholder="Place of Birth"
+      required
+    />
+
+    <select id="gender" name="gender" required>
+      <option value="" disabled selected>Select Gender</option>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <select id="focus" name="focus" required>
+      <option value="" disabled selected>Prediction Focus</option>
+      <option value="Career">Career</option>
+      <option value="Health">Health</option>
+      <option value="Relationships">Relationships</option>
+      <option value="Education">Education</option>
+    </select>
+
+    <input
+      type="email"
+      id="email"
+      name="email"
+      placeholder="Email Address"
+      required
+    />
+
+    <button type="submit">Get Prediction</button>
+  </form>
+
+  <div id="message"></div>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
