@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     try {
       const response = await fetch(
-        "https://coderbagya.app.n8n.cloud/webhook-test/Astro",
+        "https://coderbagya.app.n8n.cloud/webhook/Astro",
         {
           method: "POST",
           headers: {
